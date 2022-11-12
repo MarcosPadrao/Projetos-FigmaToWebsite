@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.text-menu{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#CF2425, #D95E5F 50%, #D95E5F 60%, #DA3B3F);
+    background-attachment: fixed;
+}
+
+header{
+    width: 100vw;
+    padding: 40px 0 0 6vw;
+}
+/* Menu Hamburger */
+.menu-hamburger{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#menu-linhas{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px;
+}
+#menu-linhas div{
+    background-color: white;
+    height: 2px;
+    width: 24px;
+    border: none;
+    border-radius: 2px;
+}
+div#linha2{
+    width: 36px;
+}
+.menu-hamburger:hover > .text-menu{
+    filter: drop-shadow(0 0 1px);
+}
+.menu-hamburger:hover > #menu-linhas div{
+    filter: drop-shadow(0 0 2px);
+    width: 36px;
+}
+/* Fim do Menu Hamburger */
+
+.logo-fundo{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 50%;
+    z-index: -1;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#garrafa{
+    height: 80vh;
+}
+.conteudo-texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: end;
+    color: white;
+    position: absolute;
+    max-width: 212px;
+    transform: translateX(-100%);
+    margin-right: 0;
+}
+
+footer{
+    width: 100vw;
+    padding: 0 6vw 4vh 0;
+    display: flex;
+    justify-content: right;
+}
+
+@media(max-width: 660px){
+    .conteudo-texto{
+        font-size: 1.7rem;
+        max-width: 140px;
+        margin-right: 44px;
+    }
+}
+
+@media(max-height: 740px){
+    #garrafa{
+        height: 60vh;
+    }
+}
+
+
+@media(max-width: 480px){
+    main{
+        flex-direction: column;
+    }
+    .conteudo-texto{
+        position: relative;
+        transform: translateX(0%);
+        text-align: center;
+        font-size: 1.2rem;
+        margin-right: 0;
+        font-weight: 400;
+    }
+    #garrafa{
+        height: 67vh;
+    }
+}
