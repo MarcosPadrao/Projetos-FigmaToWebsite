@@ -1,3 +1,8 @@
+html, body{
+    position: relative;
+    overflow: hidden;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -5,7 +10,38 @@ body{
     url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: zoom 1s;
+}
+
+@media (max-width: 925px), (max-height: 725px){
+    body header, body main, body footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    body header{
+        padding-top: 30px;
+    }
+    body footer{
+        padding-bottom: 25px;
+    }
+    body{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
+        url(../img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
