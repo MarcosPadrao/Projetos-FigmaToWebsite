@@ -6,28 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Doutor Estranho 2</title>
 </head>
 <body>
     <header>
-        <img src="./img/logo-marvel.png" alt="Logo-Marvel">
-        <nav class="menu-principal">
-            <a href="*">HOME</a>
-            <a href="*">PERSONAGENS</a>
-            <a href="*">GALERIA</a>
-            <a href="*">VÍDEOS</a>
+        <a href="https://www.marvel.com/" id="Logo-Marvel">   
+            <img src="./img/logo-marvel.png" alt="Logo-Marvel">
+        </a>
+        <nav>
+            <ul class="menu-principal">
+                <li>
+                    <a href="*">HOME</a>
+                </li>
+                <li>
+                    <a href="*">PERSONAGENS</a>
+                </li>
+                <li>
+                    <a href="*">GALERIA</a>
+                </li>
+                <li>
+                    <a href="*">VÍDEOS</a>
+                </li>
+            </ul>
         </nav>
     </header>
     
     <main>
-        <div id="principal">
-            <div id="texto">
-                <h4>Doutor</h4>
-                <h1 id="estranho">ESTRANHO <span style="font-size: 2.2rem;font-weight: 200;">NO</span></h1>
-                <h3 id="loucura">MULTIVERSO DA LOUCURA</h3>
+        <div class="principal-content">
+            <div id="nome-filme">
+                <div class="titulo">
+                    <span>Doutor</span>
+                    <h1>
+                        ESTRANHO<span>NO</span>
+                    </h1>
+                </div>
+                <span class="subtitulo">
+                    MULTIVERSO DA LOUCURA
+                </span>
             </div>
-            <p id="sinopse">Um passeio emocionante pelo Multiverso com Doutor Estranho, seu amigo de confiança Wong e Wanda Maximoff, também conhecida como Feiticeira Escarlate.</p>
-            <a href="https://www.youtube.com/watch?v=X23XCFgdh2M" id="principal-btn">Assista o trailer</a>
+
+            <p class="sinopse">
+                Um passeio emocionante pelo Multiverso com Doutor Estranho, seu amigo de confiança Wong e Wanda Maximoff, também conhecida como Feiticeira Escarlate.
+            </p>
+            
+            <a class="principal-btn" href="https://www.youtube.com/watch?v=X23XCFgdh2M">
+                Assista o trailer &RightArrow;
+            </a>
         </div>
         <div class="redes-sociais">
             <a href="https://www.youtube.com/">Y</a>
@@ -38,7 +66,7 @@
     </main>
     
     <footer>
-        Copyright 2022 &copy; | Marcos Padrão
+        <p>Copyright 2022 &copy; | Marcos Padrão</p>
     </footer>
 </body>
 </html>

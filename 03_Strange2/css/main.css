@@ -1,0 +1,99 @@
+main{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 128px;
+    color: #fff;
+}
+
+
+.principal-content{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/*Texto principal*/
+#nome-filme, .titulo, .subtitulo, .sinopse{
+    width: 39rem;
+    display: flex;
+    flex-direction: column;
+}
+.titulo h1{
+    font-size: 6.4rem;
+    font-weight: 500;
+    line-height: 5.6rem;
+}
+#nome-filme{
+    gap: 1rem;
+}
+.titulo span{
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.4rem;
+}
+.subtitulo{
+    font-size: 3rem;
+    font-style: italic;
+    color: #E62721;
+    line-height: 2.2rem;
+}
+.sinopse{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+/*Fim do Texto Principal*/
+
+
+/* Botão principal */
+.principal-btn{
+    background-color: #E62721;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: 25px;
+    width: 312px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.principal-btn:hover{
+    transition: background-color 1s;
+    background-color: #A11F1E;
+    text-shadow: 0px 0px 3px #fff;
+}
+/* Fim do botão principal */
+
+
+/*Menu redes sociais*/
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    height: 100%;
+}
+.redes-sociais a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 46px;
+    border: 2px solid#fff;
+    border-radius: 46px;
+    text-decoration: none;
+    color: #fff;
+}
+.redes-sociais a:hover{
+    transition: all 1s;
+    background-color: #E62721;
+    border-color: #E62721;
+}
+/*Fim do menu redes sociais*/
