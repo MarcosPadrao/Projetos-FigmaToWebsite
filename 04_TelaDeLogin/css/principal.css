@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#principal{
+    position: relative;
+    display: flex;
+    box-shadow: 0px 5px 20px #A0A0A0;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 480px;
+    width: 768px;
+}
+
+

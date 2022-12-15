@@ -1,0 +1,25 @@
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.redes-sociais a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--redes-sociais-1);
+    font-size: 19px;
+    transition: .5s;
+}
+
+.redes-sociais a:hover{
+    cursor: pointer;
+    color: var(--text-color-light);
+    background-color: var(--redes-sociais-2);
+    transform: translateY(-15%);
+}

@@ -1,0 +1,17 @@
+.btn-principal{
+    height: 40px;
+    padding: 0 50px;
+    border: 2px solid var(--btn-principal-1);
+    border-radius: 40px;
+    background-color: transparent;
+    color: var(--btn-principal-1);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: .87rem;
+    cursor: pointer;
+}
+.btn-principal:hover{
+    transition: all 1s;
+    background-color: var(--btn-principal-1);
+    color: var(--btn-principal-2);
+}

@@ -1,0 +1,51 @@
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: translate(100%);
+    transition: .7s;
+    z-index: 10;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 55px 40px;
+    text-align: center;
+    background-color: var(--cor-principal);
+    color: var(--text-color-light);
+}
+.overlay .btn-principal{
+    border-color: var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+
+/*Inicio da animamaçao - areas em overlay*/
+#principal.trocar .overlay-container{
+    transform: translate(0%);
+}
+
+#overlay-1{
+    opacity: 100%;
+}
+#overlay-2{
+    opacity: 0%;
+    z-index: -1;
+}
+#principal.trocar #overlay-1{
+    opacity: 0%;
+    z-index: -1;
+}
+#principal.trocar #overlay-2{
+    opacity: 100%;
+    
+}
+/*Fim da animamaçao - areas em overlay*/

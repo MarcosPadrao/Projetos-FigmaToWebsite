@@ -1,0 +1,58 @@
+@media (max-width: 768px){
+
+    body{
+        padding: 12vh 12vw;
+    }
+    #principal{
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .formularios{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 70px 0;
+    }
+    #ja-tem-conta,#registre-se{
+        visibility: visible;
+    }#ja-tem-conta a{
+        color: var(--cor-secundaria);
+    }
+
+    #form-cadastrar{
+        transform: translateX(100%);
+        background-color: var(--cor-principal);
+        color: var(--cor-secundaria);
+    }
+    #form-cadastrar .btn-principal{
+        border-color: var(--btn-principal-2);
+    }
+    
+    #form-cadastrar .redes-sociais a:hover{
+        cursor: pointer;
+        color: var(--redes-sociais-2);
+        background-color: var(--redes-sociais-1);
+        transform: translateY(-15%);
+    }
+
+    .btn-principal{
+        background-color: var(--btn-principal-1);
+        color: var(--btn-principal-2);
+    }
+
+    .overlay-container{
+        visibility: hidden;
+        z-index: -10;
+    }
+}
+@media (max-width: 480px){
+    body{
+        padding: 0;
+    }
+    #principal{
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    color: var(--text-color-dark);
+}
+
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color-dark);
+}
+
+p{
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
